@@ -15,22 +15,18 @@ data_frame = pd.DataFrame(data_list[1:], columns=data_list[0])
 
 print('-------------1---------------')
 print(data_frame)
-print('-----------------------------')
 
 # If we want to displey specific row
 print('-------------2---------------')
 print(data_frame.iloc[8])
-print('-----------------------------')
 
 # If we want to displey specific row with specific column
 print('-------------3---------------')
 print(data_frame.iloc[8]['name'])
-print('-----------------------------')
 
 # If we want to displey specific column, we can add [row_number] to see specific row (without .iloc[]])
 print('-------------4---------------')
 print(data_frame['age'])
-print('-----------------------------')
 
 # Now lets do a little of data ploting
 age = data_frame['age'].astype(int)
